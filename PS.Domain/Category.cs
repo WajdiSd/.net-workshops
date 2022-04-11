@@ -9,5 +9,8 @@ namespace PS.Domain
         public int CategoryId { get; set; }
 
         public String Name { get; set; }
+
+        public virtual List<Product> Products { get; set; } = new List<Product>();
+
     }
 }

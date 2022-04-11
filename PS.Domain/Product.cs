@@ -37,13 +37,17 @@ namespace PS.Domain
         public string  Description { get; set; }
 
         [ForeignKey("CategoryFK")]
-        public int CategoryFK { get; set; }
-        public Category Category { get; set; }
+        public int? CategoryFK { get; set; }
+        public virtual Category Category { get; set; }
 
         [Range(0,int.MaxValue)]
         public int Quantity { get; set; }
 
-        public List<Provider> Providers { get; set; }
+        public virtual List<Provider> Providers { get; set; }
+
+        public virtual List<Product> Products { get; set; }
+        public virtual List<Achat> Achats { get; set; }
+
 
         public override string ToString()
         {

@@ -14,3 +14,19 @@ C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Data\obj\Debug\netcoreapp3.1\P
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.dll
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.pdb
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.genruntimeconfig.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.deps.json
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.runtimeconfig.json
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.runtimeconfig.dev.json
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Domain.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\bin\Debug\netcoreapp3.1\PS.Domain.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.AssemblyReference.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.AssemblyInfoInputs.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.AssemblyInfo.cs
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.CoreCompileInputs.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.csproj.CopyComplete
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Data\obj\Debug\netcoreapp3.1\PS.Data.genruntimeconfig.cache

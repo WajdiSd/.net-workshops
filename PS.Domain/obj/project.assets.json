@@ -35,25 +35,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anaso\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\sadwa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anaso\\dotNet Esprit\\ProductStoreTWIN2\\PS.Domain\\PS.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\sadwa\\Documents\\Twin\\S2\\.NET\\.net-workshops\\PS.Domain\\PS.Domain.csproj",
       "projectName": "PS.Domain",
-      "projectPath": "C:\\Users\\anaso\\dotNet Esprit\\ProductStoreTWIN2\\PS.Domain\\PS.Domain.csproj",
-      "packagesPath": "C:\\Users\\anaso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anaso\\dotNet Esprit\\ProductStoreTWIN2\\PS.Domain\\obj\\",
+      "projectPath": "C:\\Users\\sadwa\\Documents\\Twin\\S2\\.NET\\.net-workshops\\PS.Domain\\PS.Domain.csproj",
+      "packagesPath": "C:\\Users\\sadwa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sadwa\\Documents\\Twin\\S2\\.NET\\.net-workshops\\PS.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\anaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\sadwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

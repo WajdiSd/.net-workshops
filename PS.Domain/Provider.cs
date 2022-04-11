@@ -61,7 +61,7 @@ namespace PS.Domain
 
        // public DateTime DateCreated { get; set; }
 
-        public List<Product> Products { get; set; } = new List<Product>();
+        public virtual List<Product> Products { get; set; } = new List<Product>();
 
 
 

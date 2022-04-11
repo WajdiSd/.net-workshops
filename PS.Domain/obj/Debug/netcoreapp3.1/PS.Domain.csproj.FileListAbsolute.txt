@@ -18,3 +18,13 @@ C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Domain\obj\Debug\netcoreapp3.1
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.csproj.CoreCompileInputs.cache
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.dll
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\bin\Debug\netcoreapp3.1\PS.Domain.deps.json
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\bin\Debug\netcoreapp3.1\PS.Domain.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\bin\Debug\netcoreapp3.1\PS.Domain.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.csproj.AssemblyReference.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.AssemblyInfoInputs.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.AssemblyInfo.cs
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Domain\obj\Debug\netcoreapp3.1\PS.Domain.pdb

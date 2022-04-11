@@ -23,6 +23,8 @@ namespace PS.GUI
                 Description = " mal à l'aise",
                 DateProd = DateTime.Now
             };
+            Category c = new Category { Name = "legume" };
+            p2.Category = c;
             Console.WriteLine(p2.ToString());
 
             Provider provider = new Provider
@@ -87,11 +89,24 @@ namespace PS.GUI
             s.FirstCharToUpper();
 
             //insertion dans la bd
-            
-            PSContext ctx = new PSContext();
-            ctx.Products.Add(p);
-            ctx.Biologicals.Add(biological);
-            ctx.SaveChanges();
+
+            //PSContext ctx = new PSContext();
+            ServiceProduct ps = new ServiceProduct();
+            ServiceCategory cs = new ServiceCategory();
+
+            //ctx.Products.Add(p);
+            ps.Add(p);
+
+            //ctx.Biologicals.Add(biological);
+            //ctx.Products.Add(p2);
+            //ctx.SaveChanges();
+            ps.Commit();
+
+
+            foreach (Product prod in ps.GetAll())
+            {
+                Console.WriteLine("product: "+prod.Name);
+            }
 
         }
     }

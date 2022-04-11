@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o+LMqPxiygws0gf5u6q1+tqANResrL1EOysUP2UaJVwYkrjJNoiPvz5eFWS9T9qduV8G0jxDSYSgY458kWWvUA==",
+  "dgSpecHash": "w80IR4SJ3cwzx1yT7s1YIhvhZpQgLOzYwoI6OgGolgtY9MkLdxOLnUMD3eIzWD3eUI9Ww/PN38X6kgjHVDjHkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anaso\\dotNet Esprit\\ProductStoreTWIN2\\PS.Domain\\PS.Domain.csproj",
+  "projectFilePath": "C:\\Users\\sadwa\\Documents\\Twin\\S2\\.NET\\.net-workshops\\PS.Domain\\PS.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anaso\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512"
+    "C:\\Users\\sadwa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512"
   ],
   "logs": []
 }

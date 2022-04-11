@@ -19,6 +19,30 @@ namespace PS.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("PS.Domain.Achat", b =>
+                {
+                    b.Property<int>("ClientFK")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductFK")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateAchat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClientFK", "ProductFK", "DateAchat");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Achat");
+                });
+
             modelBuilder.Entity("PS.Domain.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -27,11 +51,38 @@ namespace PS.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("MyName");
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("MyCategories");
+                });
+
+            modelBuilder.Entity("PS.Domain.Client", b =>
+                {
+                    b.Property<int>("Cin")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DateNaissance")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Prenom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Cin");
+
+                    b.ToTable("Client");
                 });
 
             modelBuilder.Entity("PS.Domain.Product", b =>
@@ -41,10 +92,7 @@ namespace PS.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CategoryFK")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CategoryId")
+                    b.Property<int?>("CategoryFK")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DateProd")
@@ -53,31 +101,31 @@ namespace PS.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasColumnType("nvarchar(25)")
+                        .HasColumnName("MyName");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
+
+                    b.Property<int?>("ProductId1")
+                        .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.HasKey("ProductId");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("CategoryFK");
+
+                    b.HasIndex("ProductId1");
 
                     b.ToTable("Products");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Product");
                 });
 
             modelBuilder.Entity("PS.Domain.Provider", b =>
@@ -118,7 +166,7 @@ namespace PS.Data.Migrations
 
                     b.HasIndex("ProvidersProviderId");
 
-                    b.ToTable("ProductProvider");
+                    b.ToTable("Providings");
                 });
 
             modelBuilder.Entity("PS.Domain.Biological", b =>
@@ -128,7 +176,7 @@ namespace PS.Data.Migrations
                     b.Property<string>("Herbs")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("Biological");
+                    b.ToTable("biological");
                 });
 
             modelBuilder.Entity("PS.Domain.Chemical", b =>
@@ -138,14 +186,36 @@ namespace PS.Data.Migrations
                     b.Property<string>("LabName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("Chemical");
+                    b.ToTable("chemical");
+                });
+
+            modelBuilder.Entity("PS.Domain.Achat", b =>
+                {
+                    b.HasOne("PS.Domain.Client", "Client")
+                        .WithMany("Achats")
+                        .HasForeignKey("ClientFK")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PS.Domain.Product", "Product")
+                        .WithMany("Achats")
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Client");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("PS.Domain.Product", b =>
                 {
                     b.HasOne("PS.Domain.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId");
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryFK")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("PS.Domain.Product", null)
+                        .WithMany("Products")
+                        .HasForeignKey("ProductId1");
 
                     b.Navigation("Category");
                 });
@@ -165,8 +235,23 @@ namespace PS.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("PS.Domain.Biological", b =>
+                {
+                    b.HasOne("PS.Domain.Product", null)
+                        .WithOne()
+                        .HasForeignKey("PS.Domain.Biological", "ProductId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("PS.Domain.Chemical", b =>
                 {
+                    b.HasOne("PS.Domain.Product", null)
+                        .WithOne()
+                        .HasForeignKey("PS.Domain.Chemical", "ProductId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+
                     b.OwnsOne("PS.Domain.Adress", "Adress", b1 =>
                         {
                             b1.Property<int>("ChemicalProductId")
@@ -182,13 +267,30 @@ namespace PS.Data.Migrations
 
                             b1.HasKey("ChemicalProductId");
 
-                            b1.ToTable("Products");
+                            b1.ToTable("chemical");
 
                             b1.WithOwner()
                                 .HasForeignKey("ChemicalProductId");
                         });
 
                     b.Navigation("Adress");
+                });
+
+            modelBuilder.Entity("PS.Domain.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("PS.Domain.Client", b =>
+                {
+                    b.Navigation("Achats");
+                });
+
+            modelBuilder.Entity("PS.Domain.Product", b =>
+                {
+                    b.Navigation("Achats");
+
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

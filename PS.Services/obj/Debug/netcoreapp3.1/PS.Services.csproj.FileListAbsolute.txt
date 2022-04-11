@@ -26,3 +26,18 @@ C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Services\obj\Debug\netcoreapp3
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.pdb
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.dll
 C:\Users\anaso\dotNet Esprit\ProductStoreTWIN2\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Services.deps.json
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Services.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Services.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Domain.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\bin\Debug\netcoreapp3.1\PS.Domain.pdb
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.csproj.AssemblyReference.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.AssemblyInfoInputs.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.AssemblyInfo.cs
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.csproj.CoreCompileInputs.cache
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.csproj.CopyComplete
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.dll
+C:\Users\sadwa\Documents\Twin\S2\.NET\.net-workshops\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.pdb
